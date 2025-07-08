@@ -73,3 +73,16 @@ npm test
 npm start
 •	Building for Production(in vs code terminal):
 npm run build 
+
+Follow below steps for setup react project and download react components using npm from JFrog artifactory.
+Login to - Packages - US-EAST (https://artifacts.devops.bfsaws.net/ui/packages)
+Use user name – email
+Password – window login password
+Go to cmd prompt execute below 2 commands
+npm login --registry=https://artifacts.devops.bfsaws.net/artifactory/api/npm/NPMPROXY/ --auth-type=web
+npm config set registry https://artifacts.devops.bfsaws.net/artifactory/api/npm/NPMPROXY/
+It will show successfully connected to JFrog Artifactory
+Above setup may needed for one time only. 
+•	Then Use the command below in vs code terminal, to create a new React application:
+npx create-react-app my-react-app
+•	Replace my-react-app with your desired project name.
